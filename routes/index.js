@@ -9,8 +9,9 @@ router.get('/', (req, res) => {
 
 router.get('/products', (req, res, next ) => {
   res.render('products', {
-    title: 'List of products'
-  });;
+    title: 'Lista de Productos'
+  });
+
 });
 
 module.exports = router;
