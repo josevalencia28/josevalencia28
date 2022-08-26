@@ -10,7 +10,8 @@ app.set('views', 'ejs');
 
 //middlewares
 app.use((req,res,next) => {
-    console.log('')
+    console.log(`${req.url} -${req.method}`);
+    next();
 })
 //routes
 
