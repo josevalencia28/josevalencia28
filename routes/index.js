@@ -2,9 +2,9 @@ const express = require('express');
 const router = express.Router();
 
 const items = [
-  {id: 1, name: 'productos1'},
-  {id: 2, name: 'productos2'},
-  {id: 3, name: 'productos3'}
+  {id: 1, name: 'Arroz'},
+  {id: 2, name: 'Carne'},
+  {id: 3, name: 'Lentejas'}
 ];
 
 router.get('/', (req, res) => {
