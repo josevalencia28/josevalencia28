@@ -18,6 +18,15 @@ router.get('/products', (req, res, next ) => {
     title: 'Lista de Productos',
     items: items
   });
+  
+  router.post('/nuevos-productos', (req, res, next) => {
+    const { nuevoItem }  = req.body;
+    items.push({
+      id: items.length +1,
+      name: nuevoItem
+    });
+    res.redirect('/products');
+  })
 
 });
 
