@@ -10,12 +10,6 @@ router.get('/', (req, res) => {
 router.get('/products', (req, res, next ) => {
   res.render('products', {
     title: 'Lista de Productos'
-  });
-
-  router.get('/precios', (req, res, next) => {
-    res.render('precios', {
-        title: 'precios'
-    });
   })
 
 });
